@@ -16,7 +16,7 @@ function main() {
     var res = fetchSlackChannelMessages(baseUrl + '?' + parameters);
     var newMessages = res.messages
       .filter(function (v) {
-        return 'reply_count' in v;
+        return !('thread_ts' in v) || v.ts === v.thread_ts;
       }).map(function (v) {
         return [
           v.client_msg_id,
@@ -24,8 +24,8 @@ function main() {
           v.text,
           v.user,
           v.ts,
-          v.reply_count,
-          v.reply_users_count,
+          v.reply_count || 0,
+          v.reply_users_count || 0,
         ];
       });
     messages = messages.concat(newMessages);
