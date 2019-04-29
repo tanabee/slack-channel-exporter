@@ -6,7 +6,7 @@ This is Slack channel exporter.
 
 - Google Apps Script (Installable triggers with Google Spreadsheet)
 
-## Usage
+## Installation
 
 1. Open https://docs.google.com/spreadsheets/d/1VclRGzDgpEKyFYHKzmdtyFaJrrBOG0EgDavxc9sZcxM/edit?usp=sharing
 - File > Make a copy... 
