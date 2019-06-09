@@ -1,10 +1,10 @@
 ## About
 
-This is Slack channel exporter. 
+This script exports threads for a specific channel in Slack to the Google SpreadSheet.
 
 ## Environment
 
-- Google Apps Script (Installable triggers with Google Spreadsheet)
+- Google Apps Script (Installable triggers with Google SpreadSheet)
 
 ## Installation
 
