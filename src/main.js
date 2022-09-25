@@ -39,9 +39,9 @@ function main() {
 }
 
 function fetchSlackChannelMessages(url) {
-	const res = UrlFetchApp.fetch(url, {
-		method: 'GET',
-		headers: { "Content-Type": 'application/json' }
-	});
+  const res = UrlFetchApp.fetch(url, {
+    method: 'GET',
+    headers: { "Content-Type": 'application/json' }
+  });
   return JSON.parse(res);
 }
